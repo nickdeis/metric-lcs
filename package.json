@@ -1,6 +1,6 @@
 {
   "name": "metric-lcs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zero dependency Metric Longest Common Subsequence implementation in js",
   "main": "index.js",
   "scripts": {
