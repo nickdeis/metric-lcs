@@ -16,7 +16,7 @@ function lcsLength(s1, s2) {
 
   for (let i = 1; i <= s1_length; i++) {
     for (let j = 1; j <= s2_length; j++) {
-      c[i][j] = x[i - 1] === y[j - 1] ? (c[i - 1][j - 1] + 1) : Math.max(c[i][j - 1], c[i - 1][j]);
+      c[i][j] = x[i - 1] === y[j - 1] ? c[i - 1][j - 1] + 1 : Math.max(c[i][j - 1], c[i - 1][j]);
     }
   }
   return c[s1_length][s2_length];
