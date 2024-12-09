@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/nickdeis/metric-lcs/actions/workflows/main.yml/badge.svg)](https://github.com/nickdeis/metric-lcs/actions/workflows/main.yml/badge.svg)
+
 # metric-lcs
 
 Zero dependency [Metric Longest Common Subsequence](http://heim.ifi.uio.no/~danielry/StringMetric.pdf) implementation in js.
@@ -5,6 +7,13 @@ Zero dependency [Metric Longest Common Subsequence](http://heim.ifi.uio.no/~dani
 ## Usage
 
 `npm i metric-lcs`
+
+```typescript
+import metriclcs from "metric-lcs";
+console.log(metriclcs("ABDEF", "ABDIF")); //.8
+```
+
+or
 
 ```javascript
 const metriclcs = require("metric-lcs");

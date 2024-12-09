@@ -1,10 +1,13 @@
 {
   "name": "metric-lcs",
-  "version": "0.1.2",
+  "version": "1.0.3",
   "description": "Zero dependency Metric Longest Common Subsequence implementation in js",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "node test.js"
+    "stage": "npm run build && node ./staging.js && node staging.mjs && ts-node staging.ts",
+    "test": "npm run stage && ts-node test.ts",
+    "build": "tsc"
   },
   "keywords": [
     "metriclcs",
@@ -15,5 +18,10 @@
   ],
   "author": "Nicholas Deis <nickjdeis@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/nickdeis/metric-lcs"
+  "repository": "https://github.com/nickdeis/metric-lcs",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
 }
