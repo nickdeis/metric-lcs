@@ -1,11 +1,12 @@
 {
   "name": "metric-lcs",
-  "version": "1.0.0",
+  "version": "1.0.2-rc",
   "description": "Zero dependency Metric Longest Common Subsequence implementation in js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "ts-node test.ts",
+    "stage": "npm run build && node ./staging.js && node staging.mjs && ts-node staging.ts",
+    "test": "npm run stage && ts-node test.ts",
     "build": "tsc"
   },
   "keywords": [

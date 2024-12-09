@@ -5,5 +5,4 @@
  * @param {string} s2
  * @returns {number}
  */
-declare function metriclcs(s1: string, s2: string): number;
-export default metriclcs;
+export default function metriclcs(s1: string, s2: string): number;

@@ -1,8 +1,8 @@
-import metriclcs from "./src";
+import metriclcs from "./dist/index.js";
 import { describe, it } from "node:test";
 import { equal } from "assert";
 
-describe("metriclcs typescript", () => {
+describe("metriclcs typescript staging", () => {
   it("Non-string arguments should return NaN", () => {
     equal(isNaN(metriclcs(1 as any, null as any)), true);
   });

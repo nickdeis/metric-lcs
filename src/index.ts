@@ -30,7 +30,7 @@ function lcsLength(s1: string, s2: string) {
  * @param {string} s2
  * @returns {number}
  */
-function metriclcs(s1: string, s2: string) {
+export default function metriclcs(s1: string, s2: string) {
   if (typeof s1 !== "string" || typeof s1 !== "string") return NaN;
   if (s1 === s2) return 1;
 
@@ -39,4 +39,4 @@ function metriclcs(s1: string, s2: string) {
   return lcsLength(s1, s2) / mlen;
 }
 
-export default metriclcs;
+module.exports = metriclcs;

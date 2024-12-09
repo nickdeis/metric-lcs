@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = metriclcs;
 /**
  * Return the length of Longest Common Subsequence (LCS) between strings s1
  * and s2.
@@ -40,4 +41,4 @@ function metriclcs(s1, s2) {
         return 1;
     return lcsLength(s1, s2) / mlen;
 }
-exports.default = metriclcs;
+module.exports = metriclcs;

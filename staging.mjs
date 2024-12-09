@@ -1,10 +1,10 @@
-import metriclcs from "./src";
+import metriclcs from "./dist/index.js";
 import { describe, it } from "node:test";
 import { equal } from "assert";
 
-describe("metriclcs typescript", () => {
+describe("metriclcs modular js", () => {
   it("Non-string arguments should return NaN", () => {
-    equal(isNaN(metriclcs(1 as any, null as any)), true);
+    equal(isNaN(metriclcs(1, null)), true);
   });
   it("Equal strings should return 1", () => {
     equal(metriclcs("ABCDE", "ABCDE"), 1);
