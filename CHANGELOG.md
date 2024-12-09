@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.0.0
+## 1.0.3
 
 ### Major
 
@@ -11,3 +11,8 @@
 - Typescript typings
 - Move to `node:test` framework
 - Add build pipeline
+
+### Patch
+
+- Proper multi-target exporting
+- Staging tests for js, mjs, typescript
