@@ -13,6 +13,13 @@ import metriclcs from "metric-lcs";
 console.log(metriclcs("ABDEF", "ABDIF")); //.8
 ```
 
+or
+
+```javascript
+const metriclcs = require("metric-lcs");
+console.log(metriclcs("ABDEF", "ABDIF")); //.8
+```
+
 ## Use case
 
 Longest Common Subsequence is used with `diff`, so the metric version of it is suitable for comparing larger strings or for comparing likely subsets of strings since it ignores edit distance and lowers the cost of insertion.
